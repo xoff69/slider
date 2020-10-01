@@ -1,5 +1,7 @@
-# scoring
+# Slider
 faire un composant swing équivalent à nutriscore
+
+### Problématique
 "
 Afin de montrer le composant en action, faire un programme "main" de demo qui instancie le composant dans une fenêtre avec en dessous un indicateur de la valeur sélectionnée mis à jour dynamiquement. Le programme va requêter en HTTP le site https://www.random.org toutes les 10 secondes un entier compris entre 0 et 4 et mettre à jour le composant en fonction de l'entier reçu (0=A, 1= B, etc).
 
@@ -19,10 +21,10 @@ Le travail réalisé sera livré sur un dépôt bitbucket ou github publique. Le
                        Version 3, 29 June 2007" license](./LICENSE.md).
 
 #### Installation
-L'application a été compilée et testée avec Java Se 14 mais n'utilise pas de spécificités de cette version. L'IDE utilisé Netbeans.
+L'application a été compilée et testée avec Java Se 14 mais n'utilise pas de spécificités de cette version. L'IDE utilisé est Netbeans.
 
 utilisation:
-récupérer les sources du projet sur ce référentiel.
+récupérer les sources du projet sur ce référentiel: git clone https://github.com/xoff69/slider
 
 * en ligne de commande:
 compiler le projet avec maven: mvn clean package
@@ -32,4 +34,5 @@ se placer dans le repertoire target lancer avec java : java com.cpichon.slider.M
 
 Remarque: Pas de librairie additionnelle. Je n'ai pas utilisé JUnit notamment, ni de librairie de Logging. 
 La classe principale est la classe Main dont la méthode main permet de déterminer le processus d'exécution.
+L'application a besoin d'une connexion internet pour bien fonctionner (sinon message d'erreur sur la console).
 
